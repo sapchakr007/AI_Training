@@ -1,0 +1,16 @@
+from openai import OpenAI
+
+client = OpenAI(
+  api_key="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",
+  base_url="https://api.perplexity.ai"
+)
+
+response = client.chat.completions.create(
+   model="sonar-reasoning-pro",
+    messages=[{"role": "user", "content": "write a simple regression algorithm"}],
+    
+    response_format={
+        "type": "regex",
+        "regex": { "regex": ".*" }}
+)
+print(response.choices[0].message.content)
