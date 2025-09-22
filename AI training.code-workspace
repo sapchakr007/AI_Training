@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "AI_Training",
+			"path": "../Ai_training/AI_Training"
+		}
+	],
+	"settings": {}
+}
